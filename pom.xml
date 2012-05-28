@@ -63,12 +63,12 @@
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>1.9.7</version>
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>com.github.jsimone</groupId> -->
-<!-- 			<artifactId>webapp-runner</artifactId> -->
-<!-- 			<version>7.0.22.3</version> -->
-<!-- 			<scope>provided</scope> -->
-<!-- 		</dependency> -->
+		<dependency>
+			<groupId>com.github.jsimone</groupId>
+			<artifactId>webapp-runner</artifactId>
+			<version>7.0.22.3</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -84,29 +84,29 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.2</version>
 			</plugin>
-<!-- 			<plugin> -->
-<!-- 				<groupId>org.apache.maven.plugins</groupId> -->
-<!-- 				<artifactId>maven-dependency-plugin</artifactId> -->
-<!-- 				<version>2.4</version> -->
-<!-- 				<executions> -->
-<!-- 					<execution> -->
-<!-- 						<phase>package</phase> -->
-<!-- 						<goals> -->
-<!-- 							<goal>copy</goal> -->
-<!-- 						</goals> -->
-<!-- 						<configuration> -->
-<!-- 							<artifactItems> -->
-<!-- 								<artifactItem> -->
-<!-- 									<groupId>com.github.jsimone</groupId> -->
-<!-- 									<artifactId>webapp-runner</artifactId> -->
-<!-- 									<version>7.0.22.3</version> -->
-<!-- 									<destFileName>webapp-runner.jar</destFileName> -->
-<!-- 								</artifactItem> -->
-<!-- 							</artifactItems> -->
-<!-- 						</configuration> -->
-<!-- 					</execution> -->
-<!-- 				</executions> -->
-<!-- 			</plugin> -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>com.github.jsimone</groupId>
+									<artifactId>webapp-runner</artifactId>
+									<version>7.0.22.3</version>
+									<destFileName>webapp-runner.jar</destFileName>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 </project>
